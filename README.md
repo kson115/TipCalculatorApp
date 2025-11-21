@@ -1,0 +1,2 @@
+# TipCalculator
+App calculating tip
