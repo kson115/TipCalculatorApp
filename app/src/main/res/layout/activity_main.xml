@@ -1,0 +1,284 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/padding_standard"
+    android:background="@color/background">
+
+    <!-- App Title -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/app_name"
+        android:textSize="@dimen/text_size_title"
+        android:textStyle="bold"
+        android:textColor="@color/text_primary"
+        android:layout_marginBottom="@dimen/margin_large" />
+
+    <!-- Bill Amount Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_bill_amount"
+        android:textSize="@dimen/text_size_label"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <EditText
+        android:id="@+id/etBillAmount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_bill_amount"
+        android:inputType="numberDecimal"
+        android:textSize="@dimen/text_size_input"
+        android:padding="@dimen/padding_input"
+        android:layout_marginBottom="@dimen/margin_large" />
+
+    <!-- Tip Percentage Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_tip_percentage"
+        android:textSize="@dimen/text_size_label"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <!-- Tip Preset Buttons -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="@dimen/margin_small"
+        android:gravity="center">
+
+        <TextView
+            android:id="@+id/btnTip10"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_preset_10"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_preset"
+            android:gravity="center"
+            android:padding="@dimen/padding_button"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnTip15"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_preset_15"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_preset"
+            android:gravity="center"
+            android:padding="@dimen/padding_button"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnTip18"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_preset_18"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_preset"
+            android:gravity="center"
+            android:padding="@dimen/padding_button"
+            android:layout_marginEnd="@dimen/margin_small"
+            android:clickable="true"
+            android:focusable="true" />
+
+        <TextView
+            android:id="@+id/btnTip20"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/tip_preset_20"
+            android:textSize="@dimen/text_size_medium"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:background="@drawable/button_preset"
+            android:gravity="center"
+            android:padding="@dimen/padding_button"
+            android:clickable="true"
+            android:focusable="true" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/margin_small">
+
+        <SeekBar
+            android:id="@+id/seekBarTip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="30"
+            android:progress="15" />
+
+        <TextView
+            android:id="@+id/tvTipPercent"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/tip_percent_placeholder"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:minWidth="@dimen/min_width_percent" />
+    </LinearLayout>
+
+    <!-- Tip Description -->
+    <TextView
+        android:id="@+id/tvTipDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/tip_good"
+        android:textSize="@dimen/text_size_medium"
+        android:textStyle="italic"
+        android:textColor="@color/accent"
+        android:layout_marginBottom="@dimen/margin_large" />
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:layout_marginVertical="@dimen/margin_medium" />
+
+    <!-- Tip Amount Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_tip_amount"
+            android:textSize="@dimen/text_size_label"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvTipAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:minWidth="@dimen/min_width_amount" />
+    </LinearLayout>
+
+    <!-- Total Amount Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/margin_large">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_total_amount"
+            android:textSize="@dimen/text_size_label"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvTotalAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:minWidth="@dimen/min_width_amount" />
+    </LinearLayout>
+
+    <!-- Divider -->
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/divider_height"
+        android:background="@color/divider"
+        android:layout_marginVertical="@dimen/margin_medium" />
+
+    <!-- Split Bill Section -->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/label_split_bill"
+        android:textSize="@dimen/text_size_label"
+        android:textColor="@color/text_secondary"
+        android:layout_marginBottom="@dimen/margin_small" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:layout_marginBottom="@dimen/margin_medium">
+
+        <SeekBar
+            android:id="@+id/seekBarSplit"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:max="10"
+            android:progress="1" />
+
+        <TextView
+            android:id="@+id/tvSplitCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/split_count_placeholder"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/text_primary"
+            android:layout_marginStart="@dimen/margin_medium"
+            android:minWidth="@dimen/min_width_percent" />
+    </LinearLayout>
+
+    <!-- Per Person Amount Section -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/label_per_person"
+            android:textSize="@dimen/text_size_label"
+            android:textColor="@color/text_secondary" />
+
+        <TextView
+            android:id="@+id/tvPerPersonAmount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold"
+            android:textColor="@color/accent"
+            android:minWidth="@dimen/min_width_amount" />
+    </LinearLayout>
+
+</LinearLayout>

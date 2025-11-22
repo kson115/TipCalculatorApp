@@ -1,2 +1,6 @@
-# TipCalculator
-App calculating tip
+# TipCalculator: App calculating tip
+
+
+
+
+

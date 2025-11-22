@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App Name -->
+    <string name="app_name">Tip Calculator</string>
+
+    <!-- Labels -->
+    <string name="label_bill_amount">Bill Amount</string>
+    <string name="label_tip_percentage">Tip Percentage</string>
+    <string name="label_tip_amount">Tip Amount</string>
+    <string name="label_total_amount">Total Amount</string>
+    <string name="label_split_bill">Split Bill</string>
+    <string name="label_per_person">Per Person</string>
+
+    <!-- Hints -->
+    <string name="hint_bill_amount">Enter bill amount</string>
+
+    <!-- Tip Presets -->
+    <string name="tip_preset_10">10%</string>
+    <string name="tip_preset_15">15%</string>
+    <string name="tip_preset_18">18%</string>
+    <string name="tip_preset_20">20%</string>
+
+    <!-- Tip Descriptions -->
+    <string name="tip_poor">Poor</string>
+    <string name="tip_acceptable">Acceptable</string>
+    <string name="tip_good">Good</string>
+    <string name="tip_great">Great</string>
+    <string name="tip_amazing">Amazing</string>
+
+    <!-- Formats -->
+    <string name="tip_percent_format">%d%%</string>
+    <string name="tip_percent_placeholder">15%</string>
+    <string name="split_count_format">%d</string>
+    <string name="split_count_placeholder">1</string>
+</resources>

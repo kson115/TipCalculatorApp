@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Text Sizes -->
+    <dimen name="text_size_title">32sp</dimen>
+    <dimen name="text_size_large">24sp</dimen>
+    <dimen name="text_size_medium">18sp</dimen>
+    <dimen name="text_size_label">16sp</dimen>
+    <dimen name="text_size_input">18sp</dimen>
+
+    <!-- Padding -->
+    <dimen name="padding_standard">24dp</dimen>
+    <dimen name="padding_input">12dp</dimen>
+    <dimen name="padding_button">10dp</dimen>
+
+    <!-- Margins -->
+    <dimen name="margin_small">8dp</dimen>
+    <dimen name="margin_medium">16dp</dimen>
+    <dimen name="margin_large">24dp</dimen>
+
+    <!-- Other -->
+    <dimen name="divider_height">1dp</dimen>
+    <dimen name="min_width_percent">60dp</dimen>
+    <dimen name="min_width_amount">100dp</dimen>
+</resources>
+
+
+
